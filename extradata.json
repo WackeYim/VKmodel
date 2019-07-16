@@ -1,0 +1,43 @@
+{
+    "A": {
+        "explain" :"GPS",
+        "valtype" :"str",
+        "sep" :"",
+        "vals" : [
+            {"lens" : "[0:6]","dic": "timer"},
+            {"lens" : "[6:14]", "dic" : "latitude"},
+            {"lens" : "[14:23]", "dic" : "longitude"},
+            {"lens" : "[23:24]", "dic" : "flag"},
+            {"lens" : "[24:26]", "dic" : "speed"},
+            {"lens" : "[26:28]", "dic" : "direction"},
+            {"lens" : "[28:34]", "dic" : "年月日"},
+            {"lens" : "[34:]", "dic" : "HDOP"}
+          ]
+    },
+    "B": {
+        "explain" :"GPS2",
+        "valtype" :"str",
+        "sep" :"",
+        "vals" : {
+            "timer" : "[0:6]",
+            "latitude": "[6:14]",
+            "longitude": "[14:23]",
+            "flag" : "[23:24]",
+            "speed": "[24:26]",
+            "direction":"[26:28]",
+            "年月日":"[28:34]",
+            "HDOP":"[34:]"
+        }
+    },
+    "D": {
+        "explain" : "VIN",
+        "valtype" : "dict",
+        "sep" : ",",
+        "vals" :{
+            "0" : "未执行",
+            "1": "未找到",
+            "2": "",
+            "3": "VIN有变化"
+        }
+    }
+}

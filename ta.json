@@ -1,0 +1,67 @@
+{
+    "A":{
+        "A": {
+                "sep":"[0:1]", 
+                "explain":"上报警情",
+                "vals" :{
+                    "0" : "防拆",
+                    "1": "见光",
+                    "2": "磁控",
+                    "3": "蓝牙断开"
+                },
+                "parameter": {}
+        },
+        "B": {
+                "sep":"",
+                "explain":"登录信息"
+        },
+        "J": {
+                "sep" : ",",
+                "explain":"上传终端参数",
+                "parameter": {}
+        },
+        "K": {
+                "sep" : ",",  
+                "explain":"上传OBD参数",
+                "vals": {
+                    "00":"车辆档案",
+                    "10":"已解决故障"
+                },
+                "parameter": {
+                        "sep":",",  
+                        "vals":["softversion","hardversion","Vehiclemodel","emissions","车架号"]
+                }
+        }
+    },
+    "B":{
+        "A":{
+            "sep":"",
+            "explain":"上传单条定位信息"
+        },
+        "B":{
+            "sep":"[0:1]",
+            "explain":"上传多条定位信息",
+            "vals":"length(参数分组数)",
+            "parameter":{
+                    "sep":"()"
+            }
+
+        }
+    },
+    "D":{
+        "O":{
+            "sep":"",
+            "explain":"同步OBD终端软件版本"
+        }
+    },
+    "G":{
+        "C":{
+            "sep":",",
+            "explain":"上报黑名单",
+            "parameter":{
+                    "sep":",",
+                    "vals":["设备ID","datetimes"]
+            }
+        }
+    }
+}
